@@ -1,0 +1,3 @@
+Thu Jun 06 14:14:15 2019, GENERAL: Testing logger
+Thu Jun 06 14:14:15 2019, ERROR: This is an error message number 1!
+Thu Jun 06 14:14:15 2019, ERROR: This error should be saved in log history, but not in logErrors.txt
