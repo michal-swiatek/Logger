@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1559829818 source:c:\users\pablicito\documents\github\logger\internal\logger.cpp
+	"../Logger.h"
+
+1559829818 c:\users\pablicito\documents\github\logger\logger.h
+	"Internal/ILogger.h"
+	"Internal/ConsoleLogger.h"
+	"Internal/FileLogger.h"
+	"Internal/LogHistory.h"
+
+1559829818 c:\users\pablicito\documents\github\logger\internal\ilogger.h
+	<sstream>
+	<utility>
+	<unordered_map>
+	"ObserverPattern.h"
+
+1559829818 c:\users\pablicito\documents\github\logger\internal\observerpattern.h
+	<vector>
+	<unordered_map>
+
+1559829818 c:\users\pablicito\documents\github\logger\internal\consolelogger.h
+	<iostream>
+	"ILogger.h"
+
+1559829818 c:\users\pablicito\documents\github\logger\internal\filelogger.h
+	<ctime>
+	<chrono>
+	<fstream>
+	<iostream>
+	"ILogger.h"
+
+1559829818 c:\users\pablicito\documents\github\logger\internal\loghistory.h
+	<ctime>
+	<chrono>
+	<utility>
+	<fstream>
+	<vector>
+	<unordered_map>
+	"ILogger.h"
+
+1559837067 source:c:\users\pablicito\documents\github\logger\main.cpp
+	"Logger.h"
+
