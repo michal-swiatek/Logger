@@ -5,12 +5,8 @@ The main goal of this library is to create robust, easy to use and customizable 
 
 Important: You have to call LOG_Init() before using default logger and LOG_Quit() before exiting the program to free up resources
 
-Messages are split into 5 different categories:
--ERROR
--WARNING
--INFO
--GENERAL
--COMMAND
+Messages are split into 5 different categories: ERROR, WARNING, INFO, GENERAL, COMMAND
+
 It allows to quickly diagnose the message - you can just glance over all logs and focus on particular category.
 The difference between category meaning is up to user and could be completely customized - when logging a message you decide what category it should have (e.g. when logging an information about attempt of dereferncing a nullptr you could log it as an error) and then the message is logged on all subsystems that are responsible for that type of message.
 You can customize which type of message is logged on which subsystem or completely enable/disable logging of particular type of messages.
@@ -21,6 +17,7 @@ By default subsystems support following type of messages:
 - ConsoleLogger - ERROR, WARNING, INFO, GENERAL
 - FileLogger - ERROR
 - LogHistory - ERROR, WARNING, INFO, GENERAL, COMMAND
+
 but it can be customized after initialization.
 Subsystems are responsible for:
 - ConsoleLogger - forwards messages onto console
